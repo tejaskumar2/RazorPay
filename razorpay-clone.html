@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Payment Gateway in India | Razorpay Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+ <link   rel="stylesheet" href="razorpay_clone.css">
+
+</head>
+<body>
+
+<!-- Announcement bar -->
+<div class="nav-announcement" id="announceBanner">
+  🎉 Razorpay is now accepting international payments! Enjoy 0% setup fee.
+  <a href="#" style="color:white;text-decoration:underline;margin-left:8px;">Learn more →</a>
+  <button class="announce-close" onclick="document.getElementById('announceBanner').remove()">×</button>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <!-- Logo -->
+  <a href="#" class="nav-logo">
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="10" fill="url(#lg1)"/>
+      <path d="M12 28L18 12h6l-4 10h8L16 36z" fill="white" opacity="0.9"/>
+      <path d="M20 14l6-2-4 10z" fill="white"/>
+      <defs>
+        <linearGradient id="lg1" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#075DB5"/>
+          <stop offset="1" stop-color="#2D9EE0"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    Razorpay
+  </a>
+
+  <!-- Nav links -->
+  <ul class="nav-links">
+    <!-- Payments -->
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        Payments
+        <svg class="chevron" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </a>
+      <div class="dropdown" style="min-width:620px;left:-80px;transform:none;">
+        <div class="dropdown-section-title">Accept Payments Online</div>
+        <div class="dropdown-grid">
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-icon" style="background:#EFF6FF;">💳</div>
+            <div class="dropdown-item-content"><h4>Payment Gateway</h4><p>Payments on your Website & App</p></div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-icon" style="background:#F0FDF4;">🔗</div>
+            <div class="dropdown-item-content"><h4>Payment Links</h4><p>Create & send links to collect money</p></div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-icon" style="background:#FFF7ED;">📱</div>
+            <div class="dropdown-item-content"><h4>UPI Payments <span class="badge-new">NEW</span></h4><p>Complete UPI stack for businesses</p></div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-icon" style="background:#FDF4FF;">🔁</div>
+            <div class="dropdown-item-content"><h4>Subscriptions</h4><p>Collect recurring subscription payments</p></div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-icon" style="background:#F0FDF4;">🛒</div>
+            <div class="dropdown-item-content"><h4>Magic Checkout <span class="badge-new">NEW</span></h4><p>Improve Order Conversions & Reduce RTOs</p></div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-icon" style="background:#EFF6FF;">🌐</div>
+            <div class="dropdown-item-content"><h4>International Payments</h4><p>Accept payments from across the globe</p></div>
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <!-- Banking+ -->
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        Banking+
+        <svg class="chevron" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </a>
+      <div class="dropdown" style="min-width:580px;">
+        <div class="dropdown-section-title">Business Banking Plus</div>
+        <div class="dropdown-grid">
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-icon" style="background:#EFF6FF;">🏦</div>
+            <div class="dropdown-item-content"><h4>RazorpayX</h4><p>Business banking supercharged</p></div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-icon" style="background:#FFF7ED;">💰</div>
+            <div class="dropdown-item-content"><h4>Payouts</h4><p>24×7, Instant & Automated Payouts</p></div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-icon" style="background:#F0FDF4;">🏢</div>
+            <div class="dropdown-item-content"><h4>Current Accounts</h4><p>Supercharged for businesses</p></div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-icon" style="background:#FDF4FF;">💳</div>
+            <div class="dropdown-item-content"><h4>Corporate Cards</h4><p>Streamline your business expenses</p></div>
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <!-- Payroll -->
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        Payroll
+        <svg class="chevron" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </a>
+      <div class="dropdown" style="min-width:340px;">
+        <div class="dropdown-section-title">Payroll</div>
+        <a href="#" class="dropdown-item">
+          <div class="dropdown-icon" style="background:#EFF6FF;">👥</div>
+          <div class="dropdown-item-content"><h4>For Startups & SMEs</h4><p>Automated payroll & compliances</p></div>
+        </a>
+        <a href="#" class="dropdown-item">
+          <div class="dropdown-icon" style="background:#F0FDF4;">🏛️</div>
+          <div class="dropdown-item-content"><h4>For Enterprises <span class="badge-new">NEW</span></h4><p>Payroll built for large teams</p></div>
+        </a>
+      </div>
+    </li>
+
+    <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        Resources
+        <svg class="chevron" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </a>
+      <div class="dropdown" style="min-width:500px;">
+        <div class="dropdown-section-title">Resources</div>
+        <div class="dropdown-grid">
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-icon" style="background:#EFF6FF;">📝</div>
+            <div class="dropdown-item-content"><h4>Blog</h4><p>Payments, Banking insights & more</p></div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-icon" style="background:#F0FDF4;">📚</div>
+            <div class="dropdown-item-content"><h4>Learn</h4><p>Business management, Freelance & more</p></div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-icon" style="background:#FFF7ED;">🧑‍💻</div>
+            <div class="dropdown-item-content"><h4>Developer Docs</h4><p>Get started with SDKs here</p></div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-icon" style="background:#FDF4FF;">📖</div>
+            <div class="dropdown-item-content"><h4>API Reference</h4><p>Official references for Razorpay APIs</p></div>
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Actions -->
+  <div class="nav-actions">
+    <button class="btn btn-ghost btn-sm" onclick="openModal('login')">Log In</button>
+    <button class="btn btn-primary btn-sm" onclick="openModal('signup')">Sign Up</button>
+    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav (simplified) -->
+<div class="mobile-nav" id="mobileNav" style="position:fixed;top:0;left:0;right:0;bottom:0;background:white;z-index:999;padding:90px 30px 30px;overflow-y:auto;display:none;">
+  <button onclick="toggleMobileNav()" style="position:absolute;top:20px;right:20px;background:none;border:none;font-size:24px;cursor:pointer;">×</button>
+  <div style="display:flex;flex-direction:column;gap:6px;">
+    <a href="#" style="padding:14px 0;font-size:17px;font-weight:600;color:#1E293B;border-bottom:1px solid #E2E8F0;">Payments</a>
+    <a href="#" style="padding:14px 0;font-size:17px;font-weight:600;color:#1E293B;border-bottom:1px solid #E2E8F0;">Banking+</a>
+    <a href="#" style="padding:14px 0;font-size:17px;font-weight:600;color:#1E293B;border-bottom:1px solid #E2E8F0;">Payroll</a>
+    <a href="#" style="padding:14px 0;font-size:17px;font-weight:600;color:#1E293B;border-bottom:1px solid #E2E8F0;">Pricing</a>
+    <a href="#" style="padding:14px 0;font-size:17px;font-weight:600;color:#1E293B;border-bottom:1px solid #E2E8F0;">Resources</a>
+  </div>
+  <div style="margin-top:30px;display:flex;flex-direction:column;gap:12px;">
+    <button class="btn btn-outline btn-md" onclick="openModal('login')" style="width:100%;">Log In</button>
+    <button class="btn btn-primary btn-md" onclick="openModal('signup')" style="width:100%;">Sign Up — It's Free</button>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+
+  <div class="hero-inner">
+    <!-- Left content -->
+    <div class="hero-left">
+      <div class="hero-label">🇮🇳 India's #1 Payment Gateway</div>
+
+      <!-- Slide 1 -->
+      <div class="hero-slide active" id="slide-0">
+        <h1 class="hero-title">Advanced Payment Solutions for India's <span class="highlight">finest disruptors</span></h1>
+        <p class="hero-sub">100+ Payment Methods | Easy Integration | Powerful Dashboard. Accept payments instantly from anywhere in India.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-primary btn-lg" onclick="openModal('signup')">Create Account — Free</button>
+          <button class="btn btn-white btn-lg" onclick="scrollToSection('products')">Explore Products</button>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide" id="slide-1">
+        <h1 class="hero-title">Seamless Payouts for India's <span class="highlight">growing businesses</span></h1>
+        <p class="hero-sub">Easy invoice sourcing | Auto TDS deduction | Scheduled Payments. Send money anywhere, anytime.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-primary btn-lg" onclick="openModal('signup')">Get Started Free</button>
+          <button class="btn btn-white btn-lg" onclick="scrollToSection('how')">How It Works</button>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide" id="slide-2">
+        <h1 class="hero-title">Effortless Banking for <span class="highlight">modern enterprises</span></h1>
+        <p class="hero-sub">Powerful Automation | Smart Dashboard | Integrated Access. Take control of your business finances.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-primary btn-lg" onclick="openModal('signup')">Open Business Account</button>
+          <button class="btn btn-white btn-lg">See RazorpayX Demo</button>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="hero-slide" id="slide-3">
+        <h1 class="hero-title">Automated Payroll for <span class="highlight">every team size</span></h1>
+        <p class="hero-sub">Automated Payroll & Compliances | Built for Startups & Enterprises. Pay your team on time, every time.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-primary btn-lg" onclick="openModal('signup')">Start Payroll Free</button>
+          <button class="btn btn-white btn-lg">Learn More</button>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="hero-tabs">
+        <button class="hero-tab active" onclick="goSlide(0)">Accept Payments</button>
+        <button class="hero-tab" onclick="goSlide(1)">Make Payments</button>
+        <button class="hero-tab" onclick="goSlide(2)">Business Banking</button>
+        <button class="hero-tab" onclick="goSlide(3)">Automate Payroll</button>
+      </div>
+
+      <!-- Dots -->
+      <div class="hero-dots">
+        <button class="hero-dot active" onclick="goSlide(0)" id="dot-0"></button>
+        <button class="hero-dot" onclick="goSlide(1)" id="dot-1"></button>
+        <button class="hero-dot" onclick="goSlide(2)" id="dot-2"></button>
+        <button class="hero-dot" onclick="goSlide(3)" id="dot-3"></button>
+      </div>
+
+      <!-- UPI methods -->
+      <div class="upi-methods" style="margin-top:30px;">
+        <div class="upi-chip"><span class="dot"></span>UPI</div>
+        <div class="upi-chip"><span class="dot"></span>Cards</div>
+        <div class="upi-chip"><span class="dot"></span>Net Banking</div>
+        <div class="upi-chip"><span class="dot"></span>Wallets</div>
+        <div class="upi-chip"><span class="dot"></span>EMI</div>
+      </div>
+    </div>
+
+    <!-- Right visual -->
+    <div class="hero-visual">
+      <div class="payment-card">
+        <div class="card-header">
+          <span class="card-logo">RazorpayX</span>
+          <div class="card-chip">
+            <div class="chip-line"></div>
+            <div class="chip-line"></div>
+            <div class="chip-line"></div>
+          </div>
+        </div>
+        <div class="card-number">•••• •••• •••• 4242</div>
+        <div class="card-info">
+          <div class="card-info-item">
+            <label>Card Holder</label>
+            <span>Business Name</span>
+          </div>
+          <div class="card-info-item" style="text-align:right;">
+            <label>Expires</label>
+            <span>12/27</span>
+          </div>
+        </div>
+        <!-- Mini chart inside card -->
+        <div style="margin-top:20px;background:rgba(255,255,255,0.08);border-radius:10px;padding:14px;">
+          <div style="font-size:11px;color:rgba(255,255,255,0.5);margin-bottom:8px;">Today's Revenue</div>
+          <div style="font-size:20px;font-weight:800;color:#00BAF2;">₹1,24,850</div>
+          <div style="display:flex;align-items:flex-end;gap:4px;height:36px;margin-top:10px;">
+            <div style="flex:1;background:rgba(0,186,242,0.3);border-radius:2px;height:40%;"></div>
+            <div style="flex:1;background:rgba(0,186,242,0.3);border-radius:2px;height:65%;"></div>
+            <div style="flex:1;background:rgba(0,186,242,0.5);border-radius:2px;height:55%;"></div>
+            <div style="flex:1;background:rgba(0,186,242,0.3);border-radius:2px;height:80%;"></div>
+            <div style="flex:1;background:rgba(0,186,242,0.5);border-radius:2px;height:90%;"></div>
+            <div style="flex:1;background:#00BAF2;border-radius:2px;height:100%;"></div>
+            <div style="flex:1;background:rgba(0,186,242,0.4);border-radius:2px;height:70%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="float-badge float-badge-1">
+        <div class="float-dot dot-green"></div>
+        ₹5,42,190 received today
+      </div>
+      <div class="float-badge float-badge-2">
+        <div class="float-dot dot-blue"></div>
+        99.9% uptime
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOGOS ===== -->
+<section class="logos-section">
+  <p class="logos-label">Trusted by 10 Million+ Businesses</p>
+  <div style="overflow:hidden;">
+    <div class="logos-track" id="logoTrack">
+      <div class="logo-item">🎬 Bookmyshow</div>
+      <div class="logo-item">🍕 Swiggy</div>
+      <div class="logo-item">📚 Unacademy</div>
+      <div class="logo-item">🏠 UrbanClap</div>
+      <div class="logo-item">⚡ Zerodha</div>
+      <div class="logo-item">🏥 Apollo</div>
+      <div class="logo-item">🚗 BMW India</div>
+      <div class="logo-item">🔥 ClearTax</div>
+      <div class="logo-item">🏋️ Cure.fit</div>
+      <div class="logo-item">✈️ Goibibo</div>
+      <div class="logo-item">🎓 NIIT</div>
+      <div class="logo-item">💄 Nykaa</div>
+      <div class="logo-item">💹 Groww</div>
+      <div class="logo-item">🔧 Zoho</div>
+      <div class="logo-item">⚡ Ather</div>
+      <!-- Duplicate for seamless loop -->
+      <div class="logo-item">🎬 Bookmyshow</div>
+      <div class="logo-item">🍕 Swiggy</div>
+      <div class="logo-item">📚 Unacademy</div>
+      <div class="logo-item">🏠 UrbanClap</div>
+      <div class="logo-item">⚡ Zerodha</div>
+      <div class="logo-item">🏥 Apollo</div>
+      <div class="logo-item">🚗 BMW India</div>
+      <div class="logo-item">🔥 ClearTax</div>
+      <div class="logo-item">🏋️ Cure.fit</div>
+      <div class="logo-item">✈️ Goibibo</div>
+      <div class="logo-item">🎓 NIIT</div>
+      <div class="logo-item">💄 Nykaa</div>
+      <div class="logo-item">💹 Groww</div>
+      <div class="logo-item">🔧 Zoho</div>
+      <div class="logo-item">⚡ Ather</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats-section">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-number" data-target="10">0<span>M+</span></div>
+      <div class="stat-label">Businesses Powered</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="100">0<span>+</span></div>
+      <div class="stat-label">Payment Methods</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="99.9">0<span>%</span></div>
+      <div class="stat-label">Uptime SLA</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="5">0<span>L Cr+</span></div>
+      <div class="stat-label">Payments Processed</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section class="section products-section" id="products">
+  <div class="section-inner">
+    <div class="section-header-row">
+      <div>
+        <div class="section-label">Our Products</div>
+        <h2 class="section-title">Everything your business<br>needs to grow</h2>
+        <p class="section-desc">From accepting payments to managing payroll — Razorpay has a complete suite for every business need.</p>
+      </div>
+      <button class="btn btn-outline btn-md" onclick="openModal('signup')">Get Started Free →</button>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-icon" style="background:#EFF6FF;">💳</div>
+        <h3>Payment Gateway</h3>
+        <p>Accept payments on your website & app with 100+ payment methods. Simple integration, powerful dashboard.</p>
+        <a href="#" class="card-link">Learn More <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon" style="background:#FFF7ED;">🔗</div>
+        <h3>Payment Links</h3>
+        <p>Create and share payment links in seconds. No website needed. Collect money from customers instantly.</p>
+        <a href="#" class="card-link">Learn More <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon" style="background:#F0FDF4;">📱</div>
+        <h3>UPI Payments</h3>
+        <p>The complete UPI stack for your business. QR codes, deep links, and intent flow — all in one place.</p>
+        <a href="#" class="card-link">Learn More <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon" style="background:#FDF4FF;">🏦</div>
+        <h3>RazorpayX Banking</h3>
+        <p>Business banking supercharged for disruptors. Current accounts, payouts, corporate cards & more.</p>
+        <a href="#" class="card-link">Learn More <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon" style="background:#FFFBEB;">👥</div>
+        <h3>Payroll</h3>
+        <p>Automated payroll & compliance for startups and enterprises. Pay your team on time, every time.</p>
+        <a href="#" class="card-link">Learn More <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+      </div>
+      <div class="product-card">
+        <div class="product-icon" style="background:#EFF6FF;">💰</div>
+        <h3>Instant Settlements</h3>
+        <p>Get customer payments settled faster. Access your money when you need it, not when the bank says so.</p>
+        <a href="#" class="card-link">Learn More <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAYMENT DEMO ===== -->
+<section class="section payment-demo-section" id="demo">
+  <div class="section-inner">
+    <div class="payment-demo-inner">
+      <!-- Phone mockup -->
+      <div>
+        <div class="demo-phone">
+          <div class="demo-header">
+            <div style="font-size:20px;">←</div>
+            <div class="demo-merchant">🛒 ShopEasy</div>
+            <div style="font-size:20px;">🔒</div>
+          </div>
+          <div class="demo-amount">
+            <small>Order Total</small>
+            ₹2,499.00
+          </div>
+          <div class="demo-methods">
+            <div class="demo-method-btn selected" onclick="selectDemoMethod(this)">
+              <span class="demo-method-icon">📱</span> UPI
+            </div>
+            <div class="demo-method-btn" onclick="selectDemoMethod(this)">
+              <span class="demo-method-icon">💳</span> Cards
+            </div>
+            <div class="demo-method-btn" onclick="selectDemoMethod(this)">
+              <span class="demo-method-icon">🏦</span> Net Banking
+            </div>
+            <div class="demo-method-btn" onclick="selectDemoMethod(this)">
+              <span class="demo-method-icon">👜</span> Wallets
+            </div>
+          </div>
+          <button class="demo-pay-btn" onclick="simulatePayment()">Pay ₹2,499 →</button>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div>
+        <div class="section-label">Live Demo</div>
+        <h2 class="section-title">Experience the checkout that converts</h2>
+        <p class="section-desc">Our lightning-fast, mobile-first checkout is designed to minimize drop-offs and maximize your revenue. Try it yourself →</p>
+
+        <div class="feature-list" style="margin-top:36px;">
+          <ul style="list-style:none;">
+            <li style="display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #E2E8F0;font-size:15px;">
+              <span style="color:#1FA464;font-size:18px;flex-shrink:0;">✓</span>
+              <div><strong>2-second checkout</strong> — Pre-filled customer data speeds up the entire flow</div>
+            </li>
+            <li style="display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #E2E8F0;font-size:15px;">
+              <span style="color:#1FA464;font-size:18px;flex-shrink:0;">✓</span>
+              <div><strong>100+ payment modes</strong> — UPI, Cards, Net Banking, Wallets, EMI & more</div>
+            </li>
+            <li style="display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #E2E8F0;font-size:15px;">
+              <span style="color:#1FA464;font-size:18px;flex-shrink:0;">✓</span>
+              <div><strong>Smart retry logic</strong> — Automatically retries failed payments</div>
+            </li>
+            <li style="display:flex;gap:14px;padding:14px 0;font-size:15px;">
+              <span style="color:#1FA464;font-size:18px;flex-shrink:0;">✓</span>
+              <div><strong>PCI DSS compliant</strong> — Bank-grade security for every transaction</div>
+            </li>
+          </ul>
+        </div>
+
+        <div style="margin-top:30px;display:flex;gap:14px;flex-wrap:wrap;">
+          <button class="btn btn-primary btn-md" onclick="openModal('signup')">Start Accepting Payments</button>
+          <button class="btn btn-outline btn-md">View Integration Docs</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAYMENT METHODS ===== -->
+<section class="section methods-section">
+  <div class="section-inner">
+    <div class="section-header-row">
+      <div>
+        <div class="section-label">Payment Methods</div>
+        <h2 class="section-title">100+ ways to get paid</h2>
+        <p class="section-desc">Give your customers every payment option they prefer. From UPI to EMI — we have it all.</p>
+      </div>
+    </div>
+    <div class="methods-grid">
+      <div class="method-card">
+        <div class="method-icon">📱</div>
+        <div class="method-info">
+          <h4>UPI Payments</h4>
+          <p>BHIM UPI, PhonePe, Google Pay & all UPI apps</p>
+        </div>
+        <div class="method-count">50+ apps</div>
+      </div>
+      <div class="method-card">
+        <div class="method-icon">💳</div>
+        <div class="method-info">
+          <h4>Credit & Debit Cards</h4>
+          <p>Visa, Mastercard, RuPay, Amex & Diners</p>
+        </div>
+        <div class="method-count">All types</div>
+      </div>
+      <div class="method-card">
+        <div class="method-icon">🏦</div>
+        <div class="method-info">
+          <h4>Net Banking</h4>
+          <p>All major Indian banks supported</p>
+        </div>
+        <div class="method-count">58+ banks</div>
+      </div>
+      <div class="method-card">
+        <div class="method-icon">👜</div>
+        <div class="method-info">
+          <h4>Wallets</h4>
+          <p>Paytm, Mobikwik, Amazon Pay & more</p>
+        </div>
+        <div class="method-count">10+ wallets</div>
+      </div>
+      <div class="method-card">
+        <div class="method-icon">💵</div>
+        <div class="method-info">
+          <h4>EMI Options</h4>
+          <p>No-cost EMI on credit cards & debit cards</p>
+        </div>
+        <div class="method-count">15+ banks</div>
+      </div>
+      <div class="method-card">
+        <div class="method-icon">🌐</div>
+        <div class="method-info">
+          <h4>International Cards</h4>
+          <p>Accept payments from 100+ countries</p>
+        </div>
+        <div class="method-count">100+ countries</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES TABS ===== -->
+<section class="section features-section" id="features">
+  <div class="section-inner">
+    <div class="section-label">Features</div>
+    <h2 class="section-title" style="margin-bottom:40px;">Built for businesses<br>at every stage</h2>
+
+    <div class="tabs-row">
+      <button class="tab-btn active" onclick="switchTab(0)">Payments</button>
+      <button class="tab-btn" onclick="switchTab(1)">Banking</button>
+      <button class="tab-btn" onclick="switchTab(2)">Analytics</button>
+      <button class="tab-btn" onclick="switchTab(3)">Security</button>
+    </div>
+
+    <!-- Tab 0: Payments -->
+    <div class="tab-content active" id="tab-0">
+      <div>
+        <h3 style="font-size:26px;font-weight:800;color:var(--navy);margin-bottom:12px;">Accept payments everywhere</h3>
+        <p style="color:var(--gray-600);font-size:15px;line-height:1.7;">Integrate in minutes, accept payments from your website, mobile app, social media, or even offline via payment links.</p>
+        <ul class="feature-list">
+          <li><span class="check-icon">✓</span> Simple 2-step API integration with detailed docs</li>
+          <li><span class="check-icon">✓</span> Mobile-optimized checkout that loads in under 2 seconds</li>
+          <li><span class="check-icon">✓</span> Smart payment routing for highest success rates</li>
+          <li><span class="check-icon">✓</span> Automated refunds and dispute management</li>
+          <li><span class="check-icon">✓</span> Real-time webhook notifications for every event</li>
+        </ul>
+        <button class="btn btn-primary btn-md" style="margin-top:28px;" onclick="openModal('signup')">Get Started Free</button>
+      </div>
+      <div class="dash-mockup">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+          <span style="color:rgba(255,255,255,0.6);font-size:13px;">Revenue (Last 7 days)</span>
+          <span style="color:#00BAF2;font-size:13px;font-weight:600;">+24.3%</span>
+        </div>
+        <div class="dash-bar-row">
+          <div class="dash-bar" style="height:55%;"></div>
+          <div class="dash-bar" style="height:70%;"></div>
+          <div class="dash-bar" style="height:45%;"></div>
+          <div class="dash-bar" style="height:85%;"></div>
+          <div class="dash-bar" style="height:65%;"></div>
+          <div class="dash-bar" style="height:90%;"></div>
+          <div class="dash-bar" style="height:100%;"></div>
+        </div>
+        <div class="dash-stats">
+          <div class="dash-stat">
+            <div class="val">₹8.4L</div>
+            <div class="lbl">Revenue</div>
+          </div>
+          <div class="dash-stat">
+            <div class="val">1,248</div>
+            <div class="lbl">Transactions</div>
+          </div>
+          <div class="dash-stat">
+            <div class="val">98.2%</div>
+            <div class="lbl">Success Rate</div>
+          </div>
+        </div>
+        <div style="margin-top:16px;background:rgba(255,255,255,0.06);border-radius:10px;padding:14px;">
+          <div style="font-size:12px;color:rgba(255,255,255,0.4);margin-bottom:10px;">Payment Methods Split</div>
+          <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px;">
+            <div style="height:6px;flex:4;background:var(--teal);border-radius:3px;"></div>
+            <span style="font-size:12px;color:rgba(255,255,255,0.6);">UPI 40%</span>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px;">
+            <div style="height:6px;flex:3;background:#5B8EFF;border-radius:3px;"></div>
+            <span style="font-size:12px;color:rgba(255,255,255,0.6);">Cards 30%</span>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <div style="height:6px;flex:3;background:#FFB800;border-radius:3px;"></div>
+            <span style="font-size:12px;color:rgba(255,255,255,0.6);">Others 30%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 1: Banking -->
+    <div class="tab-content" id="tab-1">
+      <div>
+        <h3 style="font-size:26px;font-weight:800;color:var(--navy);margin-bottom:12px;">Banking built for modern businesses</h3>
+        <p style="color:var(--gray-600);font-size:15px;line-height:1.7;">RazorpayX gives you a supercharged current account with integrated payouts, corporate cards, and automated workflows.</p>
+        <ul class="feature-list">
+          <li><span class="check-icon">✓</span> Current account with 8% interest on idle money</li>
+          <li><span class="check-icon">✓</span> Instant payouts 24×7 including weekends & holidays</li>
+          <li><span class="check-icon">✓</span> Corporate cards with spend controls & real-time tracking</li>
+          <li><span class="check-icon">✓</span> Automated vendor payments & tax filing</li>
+          <li><span class="check-icon">✓</span> Smart escrow accounts for digital-first businesses</li>
+        </ul>
+        <button class="btn btn-primary btn-md" style="margin-top:28px;" onclick="openModal('signup')">Open Business Account</button>
+      </div>
+      <div class="dash-mockup">
+        <div style="color:rgba(255,255,255,0.6);font-size:13px;margin-bottom:16px;">Account Balance</div>
+        <div style="font-size:36px;font-weight:900;color:white;margin-bottom:4px;">₹24,86,420</div>
+        <div style="font-size:13px;color:var(--teal);">↑ ₹1,24,000 this week</div>
+        <div style="margin-top:24px;display:grid;gap:10px;">
+          <div style="background:rgba(255,255,255,0.08);border-radius:10px;padding:14px;display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:13px;color:rgba(255,255,255,0.7);">💰 Instant Payout</span>
+            <span style="font-size:13px;font-weight:700;color:#1FA464;">Completed</span>
+          </div>
+          <div style="background:rgba(255,255,255,0.08);border-radius:10px;padding:14px;display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:13px;color:rgba(255,255,255,0.7);">🧾 GST Payment</span>
+            <span style="font-size:13px;font-weight:700;color:#FFB800;">Pending</span>
+          </div>
+          <div style="background:rgba(255,255,255,0.08);border-radius:10px;padding:14px;display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:13px;color:rgba(255,255,255,0.7);">📋 Payroll Run</span>
+            <span style="font-size:13px;font-weight:700;color:#00BAF2;">Scheduled</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Analytics -->
+    <div class="tab-content" id="tab-2">
+      <div>
+        <h3 style="font-size:26px;font-weight:800;color:var(--navy);margin-bottom:12px;">Powerful analytics & insights</h3>
+        <p style="color:var(--gray-600);font-size:15px;line-height:1.7;">Get deep insights into your payment performance, customer behavior, and revenue trends with our real-time dashboard.</p>
+        <ul class="feature-list">
+          <li><span class="check-icon">✓</span> Real-time transaction monitoring and alerts</li>
+          <li><span class="check-icon">✓</span> Cohort analysis and customer lifetime value</li>
+          <li><span class="check-icon">✓</span> Chargeback management and fraud prevention</li>
+          <li><span class="check-icon">✓</span> Custom reports and scheduled email digests</li>
+          <li><span class="check-icon">✓</span> API-based data export to your BI tools</li>
+        </ul>
+        <button class="btn btn-primary btn-md" style="margin-top:28px;" onclick="openModal('signup')">View Dashboard Demo</button>
+      </div>
+      <div class="dash-mockup">
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-bottom:14px;">Success Rate Trend</div>
+        <div style="display:flex;align-items:flex-end;gap:6px;height:120px;padding-bottom:4px;">
+          <div style="flex:1;border-radius:3px 3px 0 0;" class="dash-bar" style="height:88%;background:linear-gradient(180deg,#5B8EFF,#075DB5);"></div>
+          <div style="flex:1;border-radius:3px 3px 0 0;height:76%;background:linear-gradient(180deg,#5B8EFF,#075DB5);"></div>
+          <div style="flex:1;border-radius:3px 3px 0 0;height:82%;background:linear-gradient(180deg,#5B8EFF,#075DB5);"></div>
+          <div style="flex:1;border-radius:3px 3px 0 0;height:91%;background:linear-gradient(180deg,#00BAF2,#075DB5);"></div>
+          <div style="flex:1;border-radius:3px 3px 0 0;height:86%;background:linear-gradient(180deg,#00BAF2,#075DB5);"></div>
+          <div style="flex:1;border-radius:3px 3px 0 0;height:95%;background:linear-gradient(180deg,#00BAF2,#075DB5);"></div>
+          <div style="flex:1;border-radius:3px 3px 0 0;height:98%;background:linear-gradient(180deg,#5BF5D0,#00BAF2);"></div>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:14px;">
+          <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:10px 14px;flex:1;text-align:center;">
+            <div style="font-size:18px;font-weight:800;color:white;">98.2%</div>
+            <div style="font-size:11px;color:rgba(255,255,255,0.5);">Success Rate</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:10px 14px;flex:1;text-align:center;">
+            <div style="font-size:18px;font-weight:800;color:#1FA464;">0.3%</div>
+            <div style="font-size:11px;color:rgba(255,255,255,0.5);">Chargeback Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 3: Security -->
+    <div class="tab-content" id="tab-3">
+      <div>
+        <h3 style="font-size:26px;font-weight:800;color:var(--navy);margin-bottom:12px;">Bank-grade security you can trust</h3>
+        <p style="color:var(--gray-600);font-size:15px;line-height:1.7;">Every transaction on Razorpay is protected by multiple layers of security. Your customers' data is always safe.</p>
+        <ul class="feature-list">
+          <li><span class="check-icon">✓</span> PCI DSS Level 1 compliant infrastructure</li>
+          <li><span class="check-icon">✓</span> 3D Secure 2.0 authentication for cards</li>
+          <li><span class="check-icon">✓</span> AI-powered fraud detection in real-time</li>
+          <li><span class="check-icon">✓</span> End-to-end encryption for all data</li>
+          <li><span class="check-icon">✓</span> RBI-authorized payment aggregator</li>
+        </ul>
+        <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;">
+          <div style="background:var(--gray-100);border-radius:10px;padding:12px 18px;font-size:13px;font-weight:700;color:var(--navy);">🔒 PCI DSS Level 1</div>
+          <div style="background:var(--gray-100);border-radius:10px;padding:12px 18px;font-size:13px;font-weight:700;color:var(--navy);">🏛️ RBI Authorized</div>
+          <div style="background:var(--gray-100);border-radius:10px;padding:12px 18px;font-size:13px;font-weight:700;color:var(--navy);">🛡️ ISO 27001</div>
+        </div>
+      </div>
+      <div class="dash-mockup">
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-bottom:16px;">Security Monitor — Live</div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+          <div style="width:10px;height:10px;background:#1FA464;border-radius:50%;box-shadow:0 0 8px #1FA464;animation:pulse 2s infinite;"></div>
+          <span style="color:white;font-weight:600;">All Systems Operational</span>
+        </div>
+        <div style="display:grid;gap:8px;">
+          <div style="background:rgba(31,164,100,0.15);border:1px solid rgba(31,164,100,0.3);border-radius:8px;padding:12px;display:flex;justify-content:space-between;">
+            <span style="color:rgba(255,255,255,0.7);font-size:13px;">🔐 Encryption</span>
+            <span style="color:#1FA464;font-size:13px;font-weight:700;">Active</span>
+          </div>
+          <div style="background:rgba(31,164,100,0.15);border:1px solid rgba(31,164,100,0.3);border-radius:8px;padding:12px;display:flex;justify-content:space-between;">
+            <span style="color:rgba(255,255,255,0.7);font-size:13px;">🤖 Fraud Detection AI</span>
+            <span style="color:#1FA464;font-size:13px;font-weight:700;">Active</span>
+          </div>
+          <div style="background:rgba(31,164,100,0.15);border:1px solid rgba(31,164,100,0.3);border-radius:8px;padding:12px;display:flex;justify-content:space-between;">
+            <span style="color:rgba(255,255,255,0.7);font-size:13px;">🔄 3D Secure 2.0</span>
+            <span style="color:#1FA464;font-size:13px;font-weight:700;">Active</span>
+          </div>
+          <div style="background:rgba(31,164,100,0.15);border:1px solid rgba(31,164,100,0.3);border-radius:8px;padding:12px;display:flex;justify-content:space-between;">
+            <span style="color:rgba(255,255,255,0.7);font-size:13px;">📋 PCI DSS Compliance</span>
+            <span style="color:#1FA464;font-size:13px;font-weight:700;">Level 1</span>
+          </div>
+        </div>
+        <style>@keyframes pulse { 0%,100%{box-shadow:0 0 6px #1FA464}50%{box-shadow:0 0 14px #1FA464}}</style>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="section how-section" id="how">
+  <div class="section-inner">
+    <div style="text-align:center;margin-bottom:20px;">
+      <div class="section-label" style="justify-content:center;display:block;">How It Works</div>
+      <h2 class="section-title" style="margin-bottom:12px;">Start accepting payments<br>in 4 simple steps</h2>
+      <p class="section-desc" style="max-width:500px;margin:0 auto;">Get your business live in minutes. No hidden fees, no long approvals — just growth.</p>
+    </div>
+    <div class="steps-row">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <h3>Create Account</h3>
+        <p>Sign up with your email and mobile number. Takes less than 2 minutes.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <h3>Complete KYC</h3>
+        <p>Submit business documents online. Our team verifies within 24 hours.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <h3>Integrate</h3>
+        <p>Add a few lines of code or use our no-code plugins for popular platforms.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <h3>Start Earning</h3>
+        <p>Go live instantly. Receive settlements in your bank account within 2 days.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:50px;">
+      <button class="btn btn-primary btn-lg" onclick="openModal('signup')">Get Started — It's Free</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="section pricing-section" id="pricing">
+  <div class="section-inner">
+    <div style="text-align:center;margin-bottom:20px;">
+      <div class="section-label" style="display:block;">Simple Pricing</div>
+      <h2 class="section-title">Transparent pricing, no surprises</h2>
+      <p class="section-desc" style="margin:0 auto;">Pay only per transaction. No setup fees, no monthly charges — just a simple flat fee.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Starter -->
+      <div class="pricing-card">
+        <h3>Starter</h3>
+        <p class="pricing-desc">Perfect for individuals & early-stage startups</p>
+        <div class="pricing-rate">2%<span> / txn</span></div>
+        <p class="pricing-note">For domestic cards & UPI</p>
+        <ul class="pricing-features">
+          <li><span class="tick">✓</span> UPI & QR Payments</li>
+          <li><span class="tick">✓</span> Cards (Visa, MC, RuPay)</li>
+          <li><span class="tick">✓</span> Net Banking</li>
+          <li><span class="tick">✓</span> Email & Chat Support</li>
+          <li><span class="tick">✓</span> Basic Dashboard</li>
+          <li><span class="cross">—</span> Custom Checkout</li>
+          <li><span class="cross">—</span> Dedicated Account Manager</li>
+        </ul>
+        <button class="btn btn-outline btn-md" style="width:100%;" onclick="openModal('signup')">Get Started Free</button>
+      </div>
+
+      <!-- Popular -->
+      <div class="pricing-card popular" style="position:relative;">
+        <div class="popular-badge">Most Popular</div>
+        <h3>Business</h3>
+        <p class="pricing-desc">For growing businesses with higher volumes</p>
+        <div class="pricing-rate">1.8%<span> / txn</span></div>
+        <p class="pricing-note">For domestic cards & UPI</p>
+        <ul class="pricing-features">
+          <li><span class="tick">✓</span> Everything in Starter</li>
+          <li><span class="tick">✓</span> International Cards (3%)</li>
+          <li><span class="tick">✓</span> EMI on Credit Cards</li>
+          <li><span class="tick">✓</span> Custom Checkout Branding</li>
+          <li><span class="tick">✓</span> Priority Support</li>
+          <li><span class="tick">✓</span> Advanced Analytics</li>
+          <li><span class="cross">—</span> Dedicated Account Manager</li>
+        </ul>
+        <button class="btn btn-primary btn-md" style="width:100%;" onclick="openModal('signup')">Start Free Trial</button>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="pricing-card">
+        <h3>Enterprise</h3>
+        <p class="pricing-desc">Custom solutions for large-scale businesses</p>
+        <div class="pricing-rate" style="font-size:28px;">Custom</div>
+        <p class="pricing-note">Volume-based pricing available</p>
+        <ul class="pricing-features">
+          <li><span class="tick">✓</span> Everything in Business</li>
+          <li><span class="tick">✓</span> Volume-based discounts</li>
+          <li><span class="tick">✓</span> Dedicated Account Manager</li>
+          <li><span class="tick">✓</span> Custom Integration Support</li>
+          <li><span class="tick">✓</span> SLA-backed uptime</li>
+          <li><span class="tick">✓</span> White-label checkout</li>
+          <li><span class="tick">✓</span> On-site implementation</li>
+        </ul>
+        <button class="btn btn-dark btn-md" style="width:100%;" onclick="showToast('💬 Our sales team will contact you shortly!')">Contact Sales</button>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:30px;color:var(--gray-500);font-size:14px;">
+      ✓ No setup fees &nbsp;&nbsp; ✓ No monthly charges &nbsp;&nbsp; ✓ Cancel anytime
+    </div>
+  </div>
+</section>
+
+<!-- ===== INTEGRATIONS ===== -->
+<section class="section integration-section">
+  <div class="section-inner">
+    <div class="section-header-row">
+      <div>
+        <div class="section-label">Integrations</div>
+        <h2 class="section-title">Connect with your<br>favorite platforms</h2>
+        <p class="section-desc">30+ platforms supported. One-click plugins for Shopify, WordPress, WooCommerce & more.</p>
+      </div>
+      <button class="btn btn-outline btn-md" onclick="showToast('🔧 Explore all 30+ integrations in our docs')">View All →</button>
+    </div>
+    <div class="integration-grid">
+      <div class="integration-chip" onclick="showToast('Shopify integration docs opened!')"><span class="int-icon">🛍️</span>Shopify</div>
+      <div class="integration-chip" onclick="showToast('WordPress plugin installed!')"><span class="int-icon">🌐</span>WordPress</div>
+      <div class="integration-chip" onclick="showToast('WooCommerce plugin ready!')"><span class="int-icon">🛒</span>WooCommerce</div>
+      <div class="integration-chip" onclick="showToast('Magento integration loaded!')"><span class="int-icon">⚙️</span>Magento</div>
+      <div class="integration-chip" onclick="showToast('Zoho integration ready!')"><span class="int-icon">🔧</span>Zoho</div>
+      <div class="integration-chip" onclick="showToast('Wix plugin activated!')"><span class="int-icon">✨</span>Wix</div>
+      <div class="integration-chip" onclick="showToast('Android SDK downloaded!')"><span class="int-icon">📱</span>Android</div>
+      <div class="integration-chip" onclick="showToast('iOS SDK downloaded!')"><span class="int-icon">🍎</span>iOS</div>
+      <div class="integration-chip" onclick="showToast('React Native SDK ready!')"><span class="int-icon">⚛️</span>React Native</div>
+      <div class="integration-chip" onclick="showToast('Flutter SDK downloaded!')"><span class="int-icon">🎯</span>Flutter</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section testimonials-section">
+  <div class="section-inner">
+    <div style="text-align:center;margin-bottom:50px;">
+      <div class="section-label" style="display:block;">Customer Stories</div>
+      <h2 class="section-title">Loved by 10 million+ businesses</h2>
+    </div>
+  </div>
+  <div class="testimonials-track-wrap">
+    <div class="testimonials-track">
+      <!-- Cards -->
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Razorpay transformed our checkout. Payment success rate went from 85% to 98.2% in just one month after switching.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#075DB5,#2D9EE0);">A</div>
+          <div><div class="testi-name">Arjun Sharma</div><div class="testi-role">CTO, ShopEasy India</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">The integration took 2 hours. The support team was amazing. Our revenue grew 40% after using Razorpay's smart checkout.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#1FA464,#00BAF2);">P</div>
+          <div><div class="testi-name">Priya Nair</div><div class="testi-role">Founder, EduTech Pro</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">RazorpayX has completely changed how we manage our business finances. The current account + payouts combo is unbeatable.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#F07B35,#E94444);">R</div>
+          <div><div class="testi-name">Rahul Gupta</div><div class="testi-role">CFO, LogiMove</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">We process 50,000+ transactions daily. Razorpay handles it all without a single complaint. Uptime is rock solid.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#8B5CF6,#EC4899);">S</div>
+          <div><div class="testi-name">Sneha Kapoor</div><div class="testi-role">VP Engineering, FlashMart</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">The UPI integration is seamless. Our conversion rate on mobile went up 30% thanks to Razorpay's optimized checkout flow.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#10B981,#3B82F6);">V</div>
+          <div><div class="testi-name">Vikram Singh</div><div class="testi-role">Product Head, TravelNow</div></div>
+        </div>
+      </div>
+      <!-- Duplicate set for loop -->
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Razorpay transformed our checkout. Payment success rate went from 85% to 98.2% in just one month after switching.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#075DB5,#2D9EE0);">A</div>
+          <div><div class="testi-name">Arjun Sharma</div><div class="testi-role">CTO, ShopEasy India</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">The integration took 2 hours. The support team was amazing. Our revenue grew 40% after using Razorpay's smart checkout.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#1FA464,#00BAF2);">P</div>
+          <div><div class="testi-name">Priya Nair</div><div class="testi-role">Founder, EduTech Pro</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">RazorpayX has completely changed how we manage our business finances. The current account + payouts combo is unbeatable.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#F07B35,#E94444);">R</div>
+          <div><div class="testi-name">Rahul Gupta</div><div class="testi-role">CFO, LogiMove</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">We process 50,000+ transactions daily. Razorpay handles it all without a single complaint. Uptime is rock solid.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#8B5CF6,#EC4899);">S</div>
+          <div><div class="testi-name">Sneha Kapoor</div><div class="testi-role">VP Engineering, FlashMart</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">The UPI integration is seamless. Our conversion rate on mobile went up 30% thanks to Razorpay's optimized checkout flow.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#10B981,#3B82F6);">V</div>
+          <div><div class="testi-name">Vikram Singh</div><div class="testi-role">Product Head, TravelNow</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA SECTION ===== -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <p style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--teal);margin-bottom:16px;">Join 10M+ Businesses</p>
+    <h2 class="cta-title">Ready to power your payments?</h2>
+    <p class="cta-subtitle">Create your free account today. No credit card required.</p>
+    <div class="cta-buttons">
+      <button class="btn btn-white btn-xl" onclick="openModal('signup')">Create Free Account →</button>
+      <button class="btn btn-outline btn-xl" style="border-color:rgba(255,255,255,0.4);color:white;" onclick="showToast('📞 Sales: +91 76788 78788')">Talk to Sales</button>
+    </div>
+    <p style="margin-top:24px;color:rgba(255,255,255,0.45);font-size:13px;">✓ Free to start &nbsp;&nbsp;✓ No setup fees &nbsp;&nbsp;✓ Go live in minutes</p>
+  </div>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter-section">
+  <div class="newsletter-inner">
+    <h3>Stay in the loop 📬</h3>
+    <p>Get product updates, fintech insights, and startup tips delivered to your inbox.</p>
+    <div class="newsletter-form">
+      <input class="newsletter-input" id="nlEmail" type="email" placeholder="Enter your business email" />
+      <button class="btn btn-white btn-md" onclick="subscribeNewsletter()">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo">⚡ Razorpay</span>
+      <p>India's leading payment gateway. Trusted by 10 million+ businesses to accept, process and disburse payments with ease.</p>
+      <div class="footer-social">
+        <div class="social-btn" onclick="showToast('🐦 Follow us on Twitter @razorpay')">𝕏</div>
+        <div class="social-btn" onclick="showToast('💼 Connect on LinkedIn!')">in</div>
+        <div class="social-btn" onclick="showToast('📘 Follow on Facebook!')">f</div>
+        <div class="social-btn" onclick="showToast('🎬 Watch on YouTube!')">▶</div>
+        <div class="social-btn" onclick="showToast('📸 Follow on Instagram!')">📷</div>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Payments</h4>
+      <ul class="footer-links">
+        <li><a href="#">Payment Gateway</a></li>
+        <li><a href="#">Payment Links</a></li>
+        <li><a href="#">Payment Pages</a></li>
+        <li><a href="#">UPI Payments</a></li>
+        <li><a href="#">Subscriptions</a></li>
+        <li><a href="#">Magic Checkout</a></li>
+        <li><a href="#">International</a></li>
+        <li><a href="#">QR Codes</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Banking+</h4>
+      <ul class="footer-links">
+        <li><a href="#">RazorpayX</a></li>
+        <li><a href="#">Current Accounts</a></li>
+        <li><a href="#">Payouts</a></li>
+        <li><a href="#">Corporate Cards</a></li>
+        <li><a href="#">Tax Payments</a></li>
+        <li><a href="#">Forex Transfers</a></li>
+        <li><a href="#">Razorpay Capital</a></li>
+        <li><a href="#">Payroll</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul class="footer-links">
+        <li><a href="#">Developer Docs</a></li>
+        <li><a href="#">API Reference</a></li>
+        <li><a href="#">Integrations</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Customer Stories</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">White Papers</a></li>
+        <li><a href="#">Status Page</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul class="footer-links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Legal</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Payment badges -->
+  <div style="max-width:1200px;margin:0 auto;padding:24px 0;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:30px;">
+    <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
+      <span style="font-size:12px;color:rgba(255,255,255,0.4);margin-right:8px;">Accepted Payment Methods:</span>
+      <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:5px 12px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.6);">💳 Visa</span>
+      <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:5px 12px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.6);">🔴 Mastercard</span>
+      <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:5px 12px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.6);">🏧 RuPay</span>
+      <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:5px 12px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.6);">📱 UPI</span>
+      <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:5px 12px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.6);">💙 Paytm</span>
+      <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:5px 12px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.6);">📲 PhonePe</span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2025 Razorpay Software Private Limited. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+      <a href="#">Security</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+  <div class="modal" id="modalBox">
+    <button class="modal-close" onclick="closeModal()">×</button>
+
+    <!-- Logo -->
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:24px;">
+      <div style="width:34px;height:34px;background:linear-gradient(135deg,#075DB5,#2D9EE0);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;">⚡</div>
+      <span style="font-size:18px;font-weight:800;color:var(--navy);">Razorpay</span>
+    </div>
+
+    <div class="modal-tabs">
+      <button class="modal-tab active" onclick="switchModalTab('signup')">Sign Up</button>
+      <button class="modal-tab" onclick="switchModalTab('login')">Log In</button>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div class="modal-form active" id="modal-signup">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">First Name</label>
+          <input class="form-input" type="text" placeholder="Rahul" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Last Name</label>
+          <input class="form-input" type="text" placeholder="Sharma" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Business Email</label>
+        <input class="form-input" type="email" id="signupEmail" placeholder="you@company.com" />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Mobile Number</label>
+        <input class="form-input" type="tel" placeholder="+91 98765 43210" />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Business Type</label>
+        <select class="form-input" style="appearance:auto;">
+          <option>Select business type</option>
+          <option>Sole Proprietor</option>
+          <option>Private Limited</option>
+          <option>LLP</option>
+          <option>Partnership Firm</option>
+          <option>NGO / Trust</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input class="form-input" type="password" placeholder="Create a strong password" />
+      </div>
+      <button class="btn btn-primary btn-md" style="width:100%;margin-top:6px;" onclick="handleSignup()">Create Free Account →</button>
+      <p style="font-size:12px;color:var(--gray-400);text-align:center;margin-top:14px;">By signing up, you agree to our <a href="#" style="color:var(--blue-dark);">Terms</a> & <a href="#" style="color:var(--blue-dark);">Privacy Policy</a></p>
+    </div>
+
+    <!-- Login Form -->
+    <div class="modal-form" id="modal-login">
+      <div class="form-group">
+        <label class="form-label">Email / Mobile</label>
+        <input class="form-input" id="loginEmail" type="text" placeholder="you@company.com" />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input class="form-input" type="password" placeholder="Enter your password" />
+      </div>
+      <div style="display:flex;justify-content:flex-end;margin-bottom:18px;">
+        <a href="#" style="font-size:13px;color:var(--blue-dark);font-weight:600;">Forgot Password?</a>
+      </div>
+      <button class="btn btn-primary btn-md" style="width:100%;" onclick="handleLogin()">Log In to Dashboard →</button>
+      <div class="form-divider">or</div>
+      <button class="btn btn-outline btn-md" style="width:100%;gap:10px;" onclick="showToast('🔐 Google OAuth coming soon!')">
+        <span style="font-size:16px;">G</span> Continue with Google
+      </button>
+    </div>
+
+    <!-- Success message -->
+    <div class="success-msg" id="successMsg">
+      <div class="check">🎉</div>
+      <h3>Account Created!</h3>
+      <p>Welcome to Razorpay! Check your email to verify your account and complete KYC.</p>
+      <button class="btn btn-primary btn-md" style="margin-top:20px;" onclick="closeModal()">Get Started →</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- Back to top button -->
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})" style="position:fixed;bottom:30px;left:30px;width:46px;height:46px;border-radius:50%;background:var(--navy);color:white;border:none;font-size:18px;cursor:pointer;box-shadow:var(--shadow-lg);z-index:900;display:flex;align-items:center;justify-content:center;transition:transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">↑</button>
+
+</body>
+<script src="razorpay_colne.js"></script>
+</html>
